@@ -13,7 +13,7 @@
 * Return: No return value.
 */
 
-void swap(int *a, int *b)
+void swap_elements(int *a, int *b)
 {
 int tmp;
 tmp = *a;
