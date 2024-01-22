@@ -1,9 +1,10 @@
-#define _SORTING_H_
-#ifndef _SORTING_H_
+#ifndef _SORT_H_
+#define _SORT_H_
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stddef.h>
 
 void print_array(const int *array, size_t size);
 void swap_elements(int *a, int *b);

@@ -13,25 +13,24 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-    size_t i, j, n = size;
-    bool sort;
-    if (array == NULL || size <= 1)
-        return;
+	size_t i, len = size;
+	bool bubbly = false;
 
-    for (i = n; i > 1; i--)
-    {
-        sort = false;
-        for (j = 1; j < i; j++)
-        {
-            if (array[j - 1] > array[j])
-            {
-                swap_elements(&array[j], &array[j - 1]);
-                sort = true;
-            }
-        }
+	if (array == NULL || size < 2)
+		return;
 
-        if (sort == false)
-            break;
-    }
+	while (bubbly == false)
+	{
+		bubbly = true;
+		for (i = 0; i < len - 1; i++)
+		{
+			if (array[i] > array[i + 1])
+			{
+				swap_ints(array + i, array + i + 1);
+				print_array(array, size);
+				bubbly = false;
+			}
+		}
+		len--;
+	}
 }
-

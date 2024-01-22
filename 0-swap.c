@@ -10,7 +10,7 @@
 * @a: Pointer to the first integer.
 * @b: Pointer to the second integer.
 *
-* Return: No return value.
+* Return: Void.
 */
 
 void swap_elements(int *a, int *b)
